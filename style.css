@@ -37,6 +37,7 @@ header .btnTheme {
     display: flex;
     float: right;
     background-image: url('/images/DarkMode.svg');
+    background-image: fill #000000;
     height: 45px;
     width: 45px;
     background-color: #E9ECF8;
