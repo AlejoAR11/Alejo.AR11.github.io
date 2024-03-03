@@ -22,7 +22,7 @@ body button {
 header {
 
     padding: 10px 0;
-    background-color: #FFFFFf;
+    background-color: #FFFFFF;
 }
 
 header svg {
@@ -38,10 +38,10 @@ header .btnTheme {
     float: right;
     background-image: url('/images/DarkMode.svg');
     background-image: fill #000000;
-    height: 45px;
-    width: 45px;
-    background-color: #E9ECF8;
-    background-size: 45px 45px;
+    height: 30px;
+    width: 30px;
+    background-color: #e9ecf800;
+    background-size: 30px 30px;
     background-position: center;
     border: none;
     border-radius: 30px;
@@ -52,7 +52,7 @@ header .btnTheme {
 
 .contenido {
     display: flex;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
     padding: 0px 30px 10px 30px;
     box-sizing: border-box;
 }
@@ -68,12 +68,13 @@ header .btnTheme {
 
 .entrada p {
     text-align: center;
+    margin: 20px 0px 10px 0;
 }
 
 .textoEntrada {
     display: flex;
     justify-content: center;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
     width: 100%;
     padding: 5px;
     box-sizing: border-box;
@@ -114,7 +115,7 @@ header .btnTheme {
 }
 
 .btnEncriptar {
-    color: white;
+    color: #E9ECF8;
     background-color: #0A3871;
     height: 40px;
     width: 140px;
@@ -138,16 +139,21 @@ header .btnTheme {
 
 }
 
-.btnTheme:hover, .btnCopiar:hover{
+.btnTheme:hover,
+.btnDesencriptar:hover {
     background-color: #ADB5BD;
     transform: scale(1.01);
-
+    border-color: #868E96;
 }
 
-.btnDesencriptar:active, .btnTheme:active{
+.btnDesencriptar:active,
+.btnTheme:active {
 
-
-    
+    background-color: #868E96;
+    color: #E9ECF8;
+    transform: scale(0.98);
+    transition: none;
+    border-color: #868E96;
 }
 
 
@@ -204,6 +210,11 @@ header .btnTheme {
     -moz-box-shadow: 0px 20px 32px -2px rgba(0, 0, 0, 0.25);
     box-shadow: 0px 20px 32px -2px rgba(0, 0, 0, 0.25);
     border-radius: 16px;
+
+}
+
+.textoSalida textarea:hover {
+    cursor: default;
 }
 
 .textoSalida textarea::placeholder {
@@ -221,13 +232,21 @@ header .btnTheme {
 }
 
 .btnCopiar {
-    color: white;
+    color: #E9ECF8;
     background-color: #0A3871;
     height: 40px;
     width: 140px;
     border: none;
     border-radius: 16px;
     outline: none;
+}
+
+.alerta {
+    margin: 10px 0;
+    font-style: italic;
+    font-weight: 200;
+    font-size: 15px;
+    color: #052051;
 }
 
 footer {
