@@ -1,7 +1,7 @@
 /*Fuente*/
 
 
-body{
+body {
 
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
@@ -9,24 +9,44 @@ body{
     font-style: normal;
 }
 
-body button{
+body button {
     font-optical-sizing: auto;
-    font-weight: bold;
+    font-weight: 600;
     font-style: normal;
+    cursor: pointer;
+    transition: 0.5s ease-out;
 
 }
-
 
 
 header {
+
     padding: 10px 0;
-    background-color: F3F5FC;
+    background-color: #FFFFFf;
 }
 
-header img {
-    width: 40px;
-    height: 40px;
+header svg {
+
+    margin-left: 5px 0px 0 15px;
     padding: 5px;
+
+}
+
+header .btnTheme {
+    margin: 10px 10px;
+    display: flex;
+    float: right;
+    background-image: url('/images/DarkMode.svg');
+    height: 45px;
+    width: 45px;
+    background-color: #E9ECF8;
+    background-size: 45px 45px;
+    background-position: center;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+
+
 }
 
 .contenido {
@@ -67,8 +87,8 @@ header img {
     width: 100%;
     height: 50vh;
     font-optical-sizing: auto;
-    font-weight: bold;
-    font-style:normal;
+    font-weight: 600;
+    font-style: normal;
     font-size: 25px;
     letter-spacing: 1.5px;
     color: #0A3871;
@@ -77,7 +97,7 @@ header img {
     resize: none;
 }
 
-.textoEntrada textarea::placeholder{
+.textoEntrada textarea::placeholder {
     text-align: center;
     font-optical-sizing: auto;
     font-weight: normal;
@@ -101,6 +121,34 @@ header img {
     border-radius: 16px;
     outline: none;
 }
+
+.btnCopiar:hover,
+.btnEncriptar:hover {
+
+    background-color: #072B61;
+    transform: scale(1.01);
+}
+
+.btnCopiar:active,
+.btnEncriptar:active {
+    background-color: #052051;
+    transform: scale(0.98);
+    transition: none;
+
+}
+
+.btnTheme:hover, .btnCopiar:hover{
+    background-color: #ADB5BD;
+    transform: scale(1.01);
+
+}
+
+.btnDesencriptar:active, .btnTheme:active{
+
+
+    
+}
+
 
 .btnDesencriptar {
     color: #0A3871;
@@ -142,7 +190,7 @@ header img {
     height: 50vh;
     font-optical-sizing: auto;
     font-weight: bold;
-    font-style:normal;
+    font-style: normal;
     font-size: 25px;
     letter-spacing: 1.5px;
     border: none;
@@ -157,7 +205,7 @@ header img {
     border-radius: 16px;
 }
 
-.textoSalida textarea::placeholder{
+.textoSalida textarea::placeholder {
     text-align: center;
     font-optical-sizing: auto;
     font-weight: normal;
@@ -189,6 +237,7 @@ footer {
 }
 
 footer p {
+    font-weight: 200;
     font-size: smaller;
     font-style: italic;
 }
