@@ -3,6 +3,7 @@ const btnDesencriptar = document.querySelector(".btnDesencriptar");
 const btnCopiar = document.querySelector(".btnCopiar");
 const campoTextoEntrada = document.querySelector(".campoTexto");
 const campoTextoSalida = document.querySelector(".campoTextoSalida");
+const btnTheme = document.querySelector(".btnTheme");
 const alerta = document.querySelector(".alerta");
 
 function encriptarTexto(texto) {
@@ -81,3 +82,15 @@ function copiarTexto(event) {
 }
 
 btnCopiar.addEventListener("click", copiarTexto);
+
+
+//cambio de tema
+
+function cambiarTema(event) {
+    const body = document.body;
+    body.classList.toggle('dark-mode');
+}
+
+const themeButton = document.querySelector('.btnTheme');
+themeButton.addEventListener("click", cambiarTema);
+
