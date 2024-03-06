@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*Cambio de tema*/
 
 
@@ -383,4 +384,302 @@ footer p {
         margin: 0 auto;
         margin-top: 10px;
     }
+=======
+/*Fuente*/
+
+
+body {
+
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+body button {
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+
+}
+
+
+header {
+
+    padding: 10px 0;
+    background-color: #FFFFFF;
+}
+
+header svg {
+
+    margin-left: 5px 0px 0 15px;
+    padding: 5px;
+
+}
+
+header .btnTheme {
+    margin: 10px 10px;
+    display: flex;
+    float: right;
+    background-image: url('/images/DarkMode.svg');
+    background-image: fill #000000;
+    height: 30px;
+    width: 30px;
+    background-color: #e9ecf800;
+    background-size: 30px 30px;
+    background-position: center;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+
+
+}
+
+.contenido {
+    display: flex;
+    background-color: #FFFFFF;
+    padding: 0px 30px 10px 30px;
+    box-sizing: border-box;
+}
+
+
+.entrada {
+    flex-basis: 40%;
+    padding: 10px 20px 10px 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.entrada p {
+    text-align: center;
+    margin: 20px 0px 10px 0;
+}
+
+.textoEntrada {
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.campoTexto {
+    text-align: left;
+    opacity: 0.8;
+}
+
+.textoEntrada textarea {
+    width: 100%;
+    height: 50vh;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    color: #0A3871;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.textoEntrada textarea::placeholder {
+    text-align: center;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 15px;
+
+}
+
+.botonesEntrada {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.btnEncriptar {
+    color: #E9ECF8;
+    background-color: #0A3871;
+    height: 40px;
+    width: 140px;
+    border: none;
+    border-radius: 16px;
+    outline: none;
+}
+
+.btnCopiar:hover,
+.btnEncriptar:hover {
+
+    background-color: #072B61;
+    transform: scale(1.01);
+}
+
+.btnCopiar:active,
+.btnEncriptar:active {
+    background-color: #052051;
+    transform: scale(0.98);
+    transition: none;
+
+}
+
+.btnTheme:hover,
+.btnDesencriptar:hover {
+    background-color: #ADB5BD;
+    transform: scale(1.01);
+    border-color: #868E96;
+}
+
+.btnDesencriptar:active,
+.btnTheme:active {
+
+    background-color: #868E96;
+    color: #E9ECF8;
+    transform: scale(0.98);
+    transition: none;
+    border-color: #868E96;
+}
+
+
+.btnDesencriptar {
+    color: #0A3871;
+    background-color: #E9ECF8;
+    height: 40px;
+    width: 140px;
+    border: 1px;
+    border-style: solid;
+    border-color: #0A3871;
+    border-radius: 16px;
+    outline: none;
+}
+
+.botonesEntrada button {
+    margin: 0 5px;
+}
+
+
+.salida {
+    flex-basis: 60%;
+    display: flex;
+    padding: 10px 20px 10px 20px;
+    margin: 0px 0px 10px 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.textoSalida {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.textoSalida textarea {
+    width: 100%;
+    height: 50vh;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    border: none;
+    resize: none;
+    outline: none;
+    text-align: center;
+    padding: 20px 20px;
+    background-color: #E9ECF8;
+    -webkit-box-shadow: 0px 20px 32px -2px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 20px 32px -2px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 20px 32px -2px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+
+}
+
+.textoSalida textarea:hover {
+    cursor: default;
+}
+
+.textoSalida textarea::placeholder {
+    text-align: center;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 15px;
+
+}
+
+.botonCopiar {
+    align-self: flex-end;
+    margin: 25px 0px 0px 5px;
+}
+
+.btnCopiar {
+    color: #E9ECF8;
+    background-color: #0A3871;
+    height: 40px;
+    width: 140px;
+    border: none;
+    border-radius: 16px;
+    outline: none;
+}
+
+.alerta {
+    margin: 10px 0;
+    font-style: italic;
+    font-weight: 200;
+    font-size: 15px;
+    color: #052051;
+}
+
+footer {
+
+    margin: 40px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    font-weight: 200;
+    font-size: smaller;
+    font-style: italic;
+}
+
+
+/*"responsive"*/
+
+@media screen and (max-width: 620px) {
+
+
+    .contenido {
+
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .entrada,
+    .salida {
+        width: 90%;
+    }
+
+    .salida {
+
+        display: flex;
+        padding: 10px 20px 10px 20px;
+        margin: 0px 0px 0px 0px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .botonCopiar {
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+>>>>>>> 14d31020684ca83e4c64a2d6084c4adca01cdfb5
 }
